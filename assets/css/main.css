@@ -1,0 +1,145 @@
+
+.background{
+    height: 100%;
+    background-image: url("../images/pngtree-close-up-hd-photo-of-the-top-floor-of-the-building-picture-image_1682230.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* padding: 50px 0px; */
+    opacity: 0.8;
+}
+.logo{
+    position: absolute;
+    height: 98px;
+    width: 170px;
+    border-radius: 50px;
+}
+h1{
+    font-size: 5em;
+    color: red;
+    text-align: center;
+}
+h3{
+    color: red;
+    text-align: center; 
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+.wrapper{
+    background-color: rgba(0, 0, 0, 0.764);
+    width: 1260px;
+    margin: 0 auto;
+    height: calc(100vh - 160px);
+    border-radius: 20px;
+    position: relative;
+    box-shadow:  -12px 10px 18px 1px rgb(0 0 0 / 40%);
+}
+.wrapper > .row{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.intro{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.926);
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.intro img{
+    padding: 0px;
+    border-radius: 50%;
+}
+.intro a{
+    color: var(--btn-text-color);
+}
+.intro ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    font-size: 1em;
+    color: wheat;
+    padding-bottom: 5px;
+}
+.intro ul i{
+  padding-right: 10px;
+}
+
+.intro ul.li-flex{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1em;
+    font-size: larger;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition-duration: 1s;
+}
+
+#home h1{
+    font-size: 5em;
+    color: red;
+}
+#home p{
+    font-size: 1.5em;
+    color: #ffffffc7;
+}
+#home img{
+    border-radius: 50%;
+    display: none;
+}
+#home ul div{
+    margin: 20px;
+    background-color: black;
+    color: white;
+}
+#home ul div:hover{
+    background-color: yellow;
+    color: red;
+}
+
+.content{
+    position: relative;
+    overflow-x: hidden;
+    perspective: 400px;
+}
+
+.content >section{
+    overflow-y: auto;
+}
+
+#contact{
+    padding: 50px;
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+    background-color:rgba(10, 10, 10, 0.970);
+    height: 100%;
+    width: 100%;
+    color:turquoise;
+    transition-duration: 1s;
+    transform: translateX(-100%) rotateY(180deg);
+}
+
+#contact.show{
+    transform: translateX(0%) rotateY(0deg);
+}
